@@ -1,0 +1,183 @@
+*{
+    color: black;
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 20px 20px;
+    position: relative;
+    z-index: 100;
+
+
+}
+.Header__leftSide{
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: bold;
+}
+.Header__rightSide{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-family: URW Chancery L, cursive;
+
+}
+
+.Carousel{
+    width: 100%;
+    display: flex;
+    unicode-bidi: normal;
+    /* justify-content: center; */
+    margin-top: -50px;
+    position: relative;
+    z-index: 0;
+    height: 580px;
+    overflow: hidden;
+
+}
+
+.Carousel__Image{
+    justify-items: center;
+    width: 500px;
+    height: 100%;
+    /* margin-top: -70px; */
+    position: relative;
+    margin-bottom: 0;
+}
+
+.Carousel .list{
+    position: absolute;
+    top: 0;
+    width: 1140px;
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+
+.Carousel .list .item{
+    position: absolute;
+    left: inherit;
+    top: inherit;
+    width: 70%;
+    height: 50%;
+    font-size: 15px;
+
+}
+
+.Carousel .list .item .Carousel__Image{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Carousel .list .item .detail{
+   opacity: 0;
+   pointer-events: none;
+
+}
+
+
+.Carousel .list .item .intro{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    opacity: 0;
+pointer-events: none;
+}
+
+/* nth-child(1) */
+ .Carousel .list .item1{  
+    position: absolute;
+    transform: translate(-5%,-30%) scale(2);
+    filter: blur(5px); 
+    z-index: 11;
+    /* opacity: 0; */
+    opacity: 1;
+    pointer-events: none;
+
+
+}
+
+.Carousel .list .item:nth-child(2).intro{
+    opacity: 1;
+    pointer-events: 1;
+    transition:  opacity 0.5s;
+}
+
+/* .item:nth-child(2) */
+.Carousel .list .item2{
+    transform: translate(118%,5%)scale(1.4);
+    position: absolute;
+    filter: blur(0);
+    z-index: 10;
+    opacity: 1;
+}
+
+
+/* .item:nth-child(3) */
+
+.Carousel .list .item3{
+    transform: translate(155%,15%) scale(0.7);
+    filter: blur(3px);
+    /* filter: blur(10px); */
+    /* opacity: 1; */
+    opacity: 1;
+    z-index: 9;  
+    position: absolute; 
+
+}
+
+/* item:nth-child(4) */
+.Carousel .list .item4{
+    transform: translate(180%,22%) scale(0.5);
+    filter: blur(4px);
+    opacity: 1;
+    z-index: 8;  
+    position: absolute; 
+ 
+
+}
+
+
+
+.Carousel .list .item:nth-child(n+6){
+    opacity: 0;
+    pointer-events: none;
+    transition:  opacity 0.5s;
+}
+
+
+
+
+/* item:nth-child(5) */
+.Carousel .list .item5{
+    transform: translate(191%,30%) scale(0.2);
+    filter: blur(10px);
+    opacity: 1;
+    z-index: 9;
+    pointer-events: none;
+    position: absolute; 
+
+}
+ 
+
+.moveButtons{
+    width: 98%;
+    margin: 20px 20px 20px 20px;
+    justify-items: center;
+
+}
+
+.moveButtons__Intern{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+
+}
